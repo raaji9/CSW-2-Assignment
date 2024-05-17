@@ -25,7 +25,7 @@ public class q3 {
             @Override
             public Integer get() {
                 return Stream.iterate(2, n -> n + 1)
-                        .filter(Q03::isPrime)
+                        .filter(q3::isPrime)
                         .findFirst()
                         .orElseThrow();
             }
@@ -42,7 +42,7 @@ public class q3 {
             @Override
             public Integer get() {
                 return Stream.iterate(start, n -> n + 1)
-                        .filter(Q03::isPrime)
+                        .filter(q3::isPrime)
                         .findFirst()
                         .orElseThrow();
             }
